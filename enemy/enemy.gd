@@ -24,14 +24,14 @@ func _ready() -> void:
 	$KillZone.body_entered.connect(_on_body_entered)
 
 # เมื่อ Player ชนกับ KillZone
-func _on_body_entered(body: Node) -> void:
+func _on_body_entered(body: Node):
 	print("KillZone touched: ", body.name)
 	if body.name == "Player" or body.name == "player":
 		print(">>> PLAYER DETECTED! <<<")
-		call_deferred("_go_to_game_over")
+		call_deferred("_trigger_jumpscare")
 
-func _go_to_game_over() -> void:
-	get_tree().change_scene_to_file("res://game_over/game_over.tscn")
+func _trigger_jumpscare() -> void:
+	get_tree().change_scene_to_file("res://Jumpscare.tscn")
 
 # อัปเดตทุกเฟรม
 func _physics_process(_delta: float) -> void:
