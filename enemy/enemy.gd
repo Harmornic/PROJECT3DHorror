@@ -4,7 +4,7 @@ class_name Enemy
 signal reached_player
 
 @export var max_spotting_distance := 5000
-@export var speed := 9
+@export var speed := 7
 
 var _current_speed := 0.0
 

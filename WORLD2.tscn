@@ -1443,7 +1443,7 @@ volumetric_fog_enabled = true
 volumetric_fog_density = 0.007
 volumetric_fog_emission = Color(0.560955, 0.560955, 0.560955, 1)
 
-[node name="Node3D" type="Node3D"]
+[node name="WORLD2" type="Node3D"]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_f81t5")
@@ -4623,4 +4623,4 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82956, 2.48336, -54.1277)
 
 [node name="Enemy" parent="." instance=ExtResource("26_cgxrc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3993, 0.11565, -51.6202)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3993, 0.11565, 2.29464)
